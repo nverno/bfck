@@ -54,7 +54,8 @@ emit6bytes:	movsd
 emit2bytes:	movsb
 emit1byte:	movsb
 compile:	lea	esi, [byte ecx + epilog - filesize]
-		xchg	eax, ebx
+
+        xchg	eax, ebx
 		cmp	eax, 0x00030002		; ehdr.e_type    (0x0002)
 						; ehdr.e_machine (0x0003)
 		mov	ebp, edi		; ehdr.e_version
