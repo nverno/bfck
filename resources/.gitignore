@@ -1,6 +1,0 @@
-*.dat
-*.json
-*.html
-!.gitignore
-!provision.sh
-!.dir-locals.el
